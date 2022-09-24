@@ -4,4 +4,4 @@
 
 ### How i did ?
 
-\*First I started my code just so that it was functional and then I divided the responsibilities as the SRP says
+* First I started my code just so that it was functional and then I divided the responsibilities as the SRP says
