@@ -12,6 +12,7 @@ type CartItem = {
 type OrderStatus = 'open' | 'closed';
 
 export class ShoppingCartLegacy {
+  // Nesse caso aqui a class ShoppingCartLegacy possuia mais de uma funcao
   private readonly _items: CartItem[] = [];
   private _orderStatus: OrderStatus = 'open';
 
