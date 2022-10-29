@@ -4,4 +4,8 @@
 
 ### How i did ?
 
-* First I started my code just so that it was functional and then I divided the responsibilities as the SRP says
+- First I started my code just for it to be functional and then I divided the responsibilities and refactored according to each SOLID principle.
+
+### What is the project idea:
+
+- The idea was that it would simulate the creation of a purchasing system, dividing responsibilities into classes, creating abstractions and much more.
