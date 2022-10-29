@@ -1,5 +1,5 @@
 /**
- * Princípio Aberto-Fechado — Objetos ou entidades devem estar abertos para 
+ * Princípio Aberto-Fechado — Objetos ou entidades devem estar abertos para
  * extensão, mas fechados para modificação
  */
 
@@ -25,6 +25,5 @@ shoppingCart.addItem(new Product('Notebook', 6000));
 
 console.log(shoppingCart.total());
 console.log(shoppingCart.totalWithDiscount());
-
 
 order.checkout();

@@ -1,8 +1,8 @@
 /**
  *  Interface Segregation Principle:
- * Uma classe não deve ser forçada a implementar interfaces(types ou classes abstratas) e métodos 
+ * Uma classe não deve ser forçada a implementar interfaces(types ou classes abstratas) e métodos
  * que não irão utilizar.
- * Esse princípio basicamente diz que é melhor criar interfaces mais específicas ao invés de 
+ * Esse princípio basicamente diz que é melhor criar interfaces mais específicas ao invés de
  * termos uma única interface genérica.
  */
 
@@ -12,7 +12,7 @@ import { CartItem } from './Interfaces/CartItem';
 export class ShoppingCart {
   private readonly _items: CartItem[] = [];
 
-  constructor (private readonly discount: Discount){}
+  constructor(private readonly discount: Discount) {}
 
   addItem(item: CartItem): void {
     this._items.push(item);
@@ -42,7 +42,7 @@ export class ShoppingCart {
   }
 
   totalWithDiscount(): number {
-    return this.discount.calculate(this.total())
+    return this.discount.calculate(this.total());
   }
 
   isEmpty(): boolean {

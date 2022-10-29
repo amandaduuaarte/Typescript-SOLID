@@ -18,5 +18,4 @@ shoppingCart.addItem(new Product('Notebook', 6000));
 
 console.log(shoppingCart.total());
 
-
 order.checkout();

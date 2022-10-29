@@ -29,11 +29,15 @@ export class Order {
     this.message.sendMessage(
       `Seu pedido com total : ${this.cart.totalWithDiscount()} foi recebido`,
     );
-    
+
     this._orderStatus = 'closed';
     this.persistancy.saveOrder();
     this.cart.clear();
-    console.log('O cliente é:', this.customer.getName(), this.customer.getIDN())
+    console.log(
+      'O cliente é:',
+      this.customer.getName(),
+      this.customer.getIDN(),
+    );
   }
 }
 
