@@ -5,11 +5,12 @@
  */
 import { Mensaging } from './services/mensage';
 import { Order } from './class/order';
-import { Persistency } from './services/persistancy';
+import { Persistency } from './services/persistency';
 import { Product } from './class/product';
 import { ShoppingCart } from './class/shoppingCart';
 import { FiftyPercentDiscount } from './class/discount';
 import { IndividualCustomer } from './class/customer';
+import { MensagingProtocol } from './class/Interfaces/messaging-protocol';
 
 /**
  * Main (client code)
@@ -23,6 +24,15 @@ const individualCustomer = new IndividualCustomer(
   'Duarte',
   '77777777777',
 );
+
+/**
+ * Isso de nao depender de classes concretas mas de abstracoes
+ * ajuda muito nos testes, por ex vc depender de uma interface
+ * faz com que vc consiga testar uma funcao sem realmente execultar
+ * aquilo verdadeiramente.
+ *
+ * Para vc testar classes de forma isolada
+ */
 
 const order = new Order(shoppingCart, message, persistancy, individualCustomer);
 

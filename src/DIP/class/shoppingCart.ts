@@ -1,15 +1,21 @@
 /**
- *  Interface Segregation Principle:
- * Uma classe não deve ser forçada a implementar interfaces(types ou classes abstratas) e métodos
- * que não irão utilizar.
- * Esse princípio basicamente diz que é melhor criar interfaces mais específicas ao invés de
- * termos uma única interface genérica.
+ * DIP — Dependency Inversion Principle:
+ * Princípio da Inversão de Dependência —
+ * Dependa de abstrações e não de implementações.
+ * obs: Quanto mais abstrato mais alto nivel tal coisa tem, ex:
+ * interface que nao faz nada é considerada alto nivel
+ */
+
+/**
+ * Classes de baixo nível: Sao classes que executam tarefas(os detalhes).
+ * Classes de alto nível: Sao classes que gerenciam as de baixo nível.
  */
 
 import { Discount } from './discount';
 import { CartItem } from './Interfaces/CartItem';
+import { ShoppingCartProtocol } from './Interfaces/shopping-cart-protocol';
 
-export class ShoppingCart {
+export class ShoppingCart implements ShoppingCartProtocol {
   private readonly _items: CartItem[] = [];
 
   constructor(private readonly discount: Discount) {}
