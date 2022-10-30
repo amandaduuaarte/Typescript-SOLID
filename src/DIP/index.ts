@@ -10,7 +10,6 @@ import { Product } from './class/product';
 import { ShoppingCart } from './class/shoppingCart';
 import { FiftyPercentDiscount } from './class/discount';
 import { IndividualCustomer } from './class/customer';
-import { MensagingProtocol } from './class/Interfaces/messaging-protocol';
 
 /**
  * Main (client code)

@@ -8,7 +8,7 @@
 
 import { Mensaging } from './services/mensage';
 import { Order } from './class/order';
-import { Persistency } from './services/persistancy';
+import { Persistency } from './services/persistency';
 import { Product } from './class/product';
 import { ShoppingCart } from './class/shoppingCart';
 import { FiftyPercentDiscount } from './class/discount';

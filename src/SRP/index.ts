@@ -1,6 +1,6 @@
 import { Mensaging } from './services/mensage';
 import { Order } from './entities/order';
-import { Persistency } from './services/persistancy';
+import { Persistency } from './services/persistency';
 import { Product } from './entities/product';
 import { ShoppingCart } from './entities/shoppingCart';
 
